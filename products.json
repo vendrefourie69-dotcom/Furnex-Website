@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1,
+  "file": "assets/products/01.jpg",
+  "category": "Executive chairs",
+  "name": "Zhavia"
+ },
+ {
+  "id": 2,
+  "file": "assets/products/02.jpg",
+  "category": "Executive chairs",
+  "name": "Winston"
+ },
+ {
+  "id": 3,
+  "file": "assets/products/03.jpg",
+  "category": "Executive chairs",
+  "name": "Exodus"
+ },
+ {
+  "id": 4,
+  "file": "assets/products/04.jpg",
+  "category": "Executive chairs",
+  "name": "Que Netted"
+ },
+ {
+  "id": 5,
+  "file": "assets/products/05.jpg",
+  "category": "Executive chairs",
+  "name": "Genesis"
+ },
+ {
+  "id": 6,
+  "file": "assets/products/06.jpg",
+  "category": "Executive chairs",
+  "name": "Lijlah Slimline"
+ },
+ {
+  "id": 7,
+  "file": "assets/products/07.jpg",
+  "category": "Executive chairs",
+  "name": "Zelda"
+ },
+ {
+  "id": 8,
+  "file": "assets/products/08.jpg",
+  "category": "Executive chairs",
+  "name": "Jasmin"
+ },
+ {
+  "id": 9,
+  "file": "assets/products/09.jpg",
+  "category": "Managerial chairs",
+  "name": "Tracey Lee"
+ },
+ {
+  "id": 10,
+  "file": "assets/products/10.jpg",
+  "category": "Managerial chairs",
+  "name": "Flair"
+ },
+ {
+  "id": 11,
+  "file": "assets/products/11.jpg",
+  "category": "Managerial chairs",
+  "name": "Bartolomeu Dias"
+ },
+ {
+  "id": 12,
+  "file": "assets/products/12.jpg",
+  "category": "Managerial chairs",
+  "name": "Columbus"
+ },
+ {
+  "id": 13,
+  "file": "assets/products/13.jpg",
+  "category": "Managerial chairs",
+  "name": "Bee-Line"
+ },
+ {
+  "id": 14,
+  "file": "assets/products/14.jpg",
+  "category": "Managerial chairs",
+  "name": "Diva"
+ },
+ {
+  "id": 15,
+  "file": "assets/products/15.jpg",
+  "category": "Managerial chairs",
+  "name": "Fiona"
+ },
+ {
+  "id": 16,
+  "file": "assets/products/16.jpg",
+  "category": "Managerial chairs",
+  "name": "Simone"
+ },
+ {
+  "id": 17,
+  "file": "assets/products/17.jpg",
+  "category": "Managerial chairs",
+  "name": "170kg Heavy Duty"
+ },
+ {
+  "id": 18,
+  "file": "assets/products/18.jpg",
+  "category": "Managerial chairs",
+  "name": "Krypton"
+ },
+ {
+  "id": 19,
+  "file": "assets/products/19.jpg",
+  "category": "Managerial chairs",
+  "name": "Ameira"
+ },
+ {
+  "id": 20,
+  "file": "assets/products/20.jpg",
+  "category": "Managerial chairs",
+  "name": "Siavita"
+ },
+ {
+  "id": 21,
+  "file": "assets/products/21.jpg",
+  "category": "Economy chairs",
+  "name": null
+ },
+ {
+  "id": 22,
+  "file": "assets/products/22.jpg",
+  "category": "Economy chairs",
+  "name": null
+ },
+ {
+  "id": 23,
+  "file": "assets/products/23.jpg",
+  "category": "Economy chairs",
+  "name": null
+ },
+ {
+  "id": 24,
+  "file": "assets/products/24.jpg",
+  "category": "Economy chairs",
+  "name": null
+ },
+ {
+  "id": 25,
+  "file": "assets/products/25.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "Neon"
+ },
+ {
+  "id": 26,
+  "file": "assets/products/26.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "Utility"
+ },
+ {
+  "id": 27,
+  "file": "assets/products/27.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "Economy"
+ },
+ {
+  "id": 28,
+  "file": "assets/products/28.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "New Economy"
+ },
+ {
+  "id": 29,
+  "file": "assets/products/29.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "Amy"
+ },
+ {
+  "id": 30,
+  "file": "assets/products/30.jpg",
+  "category": "Economy & stackable chairs",
+  "name": "Willi Stacker"
+ },
+ {
+  "id": 31,
+  "file": "assets/products/31.jpg",
+  "category": "Operator & draughtsman chairs",
+  "name": "S3000"
+ },
+ {
+  "id": 32,
+  "file": "assets/products/32.jpg",
+  "category": "Operator & draughtsman chairs",
+  "name": "S4000"
+ },
+ {
+  "id": 33,
+  "file": "assets/products/33.jpg",
+  "category": "Operator & draughtsman chairs",
+  "name": "S5000"
+ },
+ {
+  "id": 34,
+  "file": "assets/products/34.jpg",
+  "category": "Operator & draughtsman chairs",
+  "name": "S6000"
+ },
+ {
+  "id": 35,
+  "file": "assets/products/35.jpg",
+  "category": "Typist, dental & industrial",
+  "name": null
+ },
+ {
+  "id": 36,
+  "file": "assets/products/36.jpg",
+  "category": "Typist, dental & industrial",
+  "name": null
+ },
+ {
+  "id": 37,
+  "file": "assets/products/37.jpg",
+  "category": "Typist, dental & industrial",
+  "name": null
+ },
+ {
+  "id": 38,
+  "file": "assets/products/38.jpg",
+  "category": "Typist, dental & industrial",
+  "name": null
+ },
+ {
+  "id": 39,
+  "file": "assets/products/39.jpg",
+  "category": "Bar stools & tub chairs",
+  "name": null
+ },
+ {
+  "id": 40,
+  "file": "assets/products/40.jpg",
+  "category": "Bar stools & tub chairs",
+  "name": null
+ },
+ {
+  "id": 41,
+  "file": "assets/products/41.jpg",
+  "category": "Bar stools & tub chairs",
+  "name": null
+ },
+ {
+  "id": 42,
+  "file": "assets/products/42.jpg",
+  "category": "Bar stools & tub chairs",
+  "name": null
+ },
+ {
+  "id": 43,
+  "file": "assets/products/43.jpg",
+  "category": "Soft seating & training",
+  "name": null
+ },
+ {
+  "id": 44,
+  "file": "assets/products/44.jpg",
+  "category": "Soft seating & training",
+  "name": null
+ },
+ {
+  "id": 45,
+  "file": "assets/products/45.jpg",
+  "category": "Soft seating & training",
+  "name": null
+ },
+ {
+  "id": 46,
+  "file": "assets/products/46.jpg",
+  "category": "Soft seating & training",
+  "name": null
+ },
+ {
+  "id": 47,
+  "file": "assets/products/47.jpg",
+  "category": "School furniture",
+  "name": "Round Folding Table"
+ },
+ {
+  "id": 48,
+  "file": "assets/products/48.jpg",
+  "category": "School furniture",
+  "name": "Rectangular Folding Table"
+ },
+ {
+  "id": 49,
+  "file": "assets/products/49.jpg",
+  "category": "School furniture",
+  "name": "Mobile Folding Table"
+ },
+ {
+  "id": 50,
+  "file": "assets/products/50.jpg",
+  "category": "School furniture",
+  "name": "Teachers Desk"
+ }
+]

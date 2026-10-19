@@ -3,72 +3,266 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Furnex | Office &amp; School Furniture</title>
-  <meta name="description" content="Furnex supplies office, school and desking furniture in Roodepoort, South Africa. Make space. Make moves.">
+  <title>Furnex | Office &amp; School Furniture, Roodepoort</title>
+  <meta name="description" content="Furnex supplies office chairs, school furniture, desking and training furniture in Roodepoort, South Africa. Request a quote on WhatsApp or by email.">
   <style>
-    :root { --black:#111; --rose:#b98b73; --rose-light:#f4ebe6; --white:#fff; --grey:#555; }
+    :root { --black:#111; --rose:#b98b73; --rose-dark:#9c6f59; --rose-light:#f6eeea; --white:#fff; --grey:#5b5b5b; --line:#ececec; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--black); background:var(--white); line-height:1.5; }
-    header { text-align:center; padding:2.5rem 1rem 1.5rem; }
-    header img { width:min(560px, 90%); height:auto; }
-    .tagline { color:var(--rose); letter-spacing:.2em; text-transform:uppercase; font-size:.9rem; margin:.5rem 0 0; }
-    .hero { background:var(--black); color:var(--white); text-align:center; padding:3rem 1.25rem; }
-    .hero h1 { font-size:clamp(1.6rem, 4vw, 2.4rem); margin:0 0 .75rem; }
-    .hero p { max-width:640px; margin:0 auto 1.5rem; color:#ddd; }
-    .btn { display:inline-block; padding:.85rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; margin:.25rem; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--black); background:var(--white); line-height:1.55; }
+    img { display:block; max-width:100%; }
+    a { color:var(--rose-dark); }
+    nav { position:sticky; top:0; z-index:10; background:var(--white); border-bottom:1px solid var(--line); }
+    nav .wrap { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.7rem 1.25rem; max-width:1100px; margin:0 auto; }
+    nav .brand img { height:38px; width:auto; }
+    nav .links a { color:var(--black); text-decoration:none; margin-left:1rem; font-size:.95rem; }
+    nav .links a:hover { color:var(--rose-dark); }
+    .btn { display:inline-block; padding:.8rem 1.4rem; border-radius:6px; text-decoration:none; font-weight:600; margin:.25rem; border:2px solid transparent; cursor:pointer; font-size:1rem; font-family:inherit; }
     .btn-whatsapp { background:#25d366; color:#fff; }
-    .btn-email { border:2px solid var(--rose); color:var(--rose); }
-    .btn-email:hover, .btn-whatsapp:hover { opacity:.9; }
-    section { padding:2.5rem 1.25rem; max-width:1000px; margin:0 auto; }
-    h2 { font-size:1.6rem; margin:0 0 1rem; }
-    .cats { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem; list-style:none; padding:0; margin:0; }
-    .cats li { background:var(--rose-light); border-left:4px solid var(--rose); padding:1rem 1.1rem; border-radius:4px; }
-    .cats strong { display:block; margin-bottom:.25rem; }
-    .muted { color:var(--grey); }
-    .quote { background:var(--black); color:var(--white); border-radius:8px; padding:2rem 1.5rem; text-align:center; }
-    .quote h2 { color:var(--white); }
-    .quote p { color:#ddd; }
-    footer { text-align:center; padding:2rem 1rem; color:var(--grey); font-size:.9rem; border-top:1px solid #eee; }
-    footer a { color:var(--rose); }
+    .btn-dark { background:var(--black); color:#fff; }
+    .btn-outline { border-color:var(--rose); color:var(--rose-dark); background:transparent; }
+    .btn-small { padding:.45rem .9rem; font-size:.9rem; }
+    .btn:hover { opacity:.9; }
+    .hero { background:var(--black); color:var(--white); text-align:center; padding:4rem 1.25rem 3.5rem; }
+    .hero img { width:min(460px, 80%); margin:0 auto 1.5rem; background:var(--white); border-radius:10px; padding:.75rem 1rem; }
+    .hero h1 { font-size:clamp(1.7rem, 4.2vw, 2.6rem); margin:0 0 .75rem; line-height:1.2; }
+    .hero p { max-width:640px; margin:0 auto 1.6rem; color:#d8d8d8; font-size:1.05rem; }
+    .tagline { color:var(--rose); letter-spacing:.2em; text-transform:uppercase; font-size:.85rem; margin:0 0 .5rem; }
+    section { padding:3rem 1.25rem; max-width:1100px; margin:0 auto; }
+    section.alt { max-width:none; background:var(--rose-light); }
+    section.alt > .inner { max-width:1100px; margin:0 auto; }
+    h2 { font-size:1.75rem; margin:0 0 .5rem; }
+    .lead { color:var(--grey); margin:0 0 1.5rem; max-width:700px; }
+    .reasons { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1rem; list-style:none; padding:0; margin:0; }
+    .reasons li { background:var(--white); border-radius:8px; padding:1.25rem; border:1px solid var(--line); }
+    .reasons strong { display:block; margin-bottom:.35rem; font-size:1.05rem; }
+    .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; counter-reset:step; list-style:none; padding:0; margin:0; }
+    .steps li { counter-increment:step; background:var(--white); border-radius:8px; padding:1.25rem 1.25rem 1.25rem 3.4rem; position:relative; border:1px solid var(--line); }
+    .steps li::before { content:counter(step); position:absolute; left:1.1rem; top:1.1rem; width:1.8rem; height:1.8rem; border-radius:50%; background:var(--black); color:var(--white); text-align:center; line-height:1.8rem; font-weight:700; }
+    .steps strong { display:block; margin-bottom:.25rem; }
+    .filters { display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 1.25rem; }
+    .filter { border:1px solid var(--line); background:var(--white); border-radius:999px; padding:.4rem .9rem; cursor:pointer; font-size:.9rem; font-family:inherit; color:var(--black); }
+    .filter.active { background:var(--black); color:var(--white); border-color:var(--black); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; }
+    .card { border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--white); display:flex; flex-direction:column; }
+    .card .img { background:var(--white); aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; padding:.5rem; }
+    .card .img img { max-height:100%; width:auto; object-fit:contain; }
+    .card .body { padding:.85rem 1rem 1rem; display:flex; flex-direction:column; gap:.4rem; flex:1; }
+    .card .cat { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--rose-dark); }
+    .card .name { font-weight:600; }
+    .card .btn { margin:auto 0 0; align-self:flex-start; }
+    .note { font-size:.9rem; color:var(--grey); margin-top:1rem; }
+    .form-card { background:var(--white); border-radius:10px; padding:1.5rem; max-width:700px; margin:0 auto; border:1px solid var(--line); }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:.9rem 1rem; }
+    .form-grid .full { grid-column:1 / -1; }
+    label { display:block; font-size:.9rem; font-weight:600; margin-bottom:.3rem; }
+    input, select, textarea { width:100%; padding:.7rem .75rem; border:1px solid #cfcfcf; border-radius:6px; font:inherit; background:var(--white); color:var(--black); }
+    textarea { min-height:110px; resize:vertical; }
+    input:focus, select:focus, textarea:focus { outline:2px solid var(--rose); border-color:var(--rose); }
+    .form-actions { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-top:1rem; }
+    .form-actions .hint { font-size:.85rem; color:var(--grey); }
+    .contact { text-align:center; }
+    .contact p { margin:.35rem 0; }
+    footer { text-align:center; padding:2rem 1rem; color:var(--grey); font-size:.9rem; border-top:1px solid var(--line); }
+    @media (max-width:640px) {
+      nav .links a { display:none; }
+      .form-grid { grid-template-columns:1fr; }
+      nav .links a:last-child { display:inline; }
+    }
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#top"><img src="assets/brand/furnex-logo.jpg" alt="Furnex"></a>
+      <div class="links">
+        <a href="#range">Range</a>
+        <a href="#why">Why Furnex</a>
+        <a href="#quote">Get a quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
     <img src="assets/brand/furnex-logo.jpg" alt="Furnex Office &amp; School Furniture logo">
+    <p class="tagline">Make space. Make moves.</p>
+    <h1>Office, school and desking furniture</h1>
+    <p>Chairs, desks, tables and seating for offices, schools, training rooms and reception areas, supplied from Roodepoort. Tell us what your space needs and we'll send a quote.</p>
+    <a class="btn btn-whatsapp" href="https://wa.me/27780195761" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a class="btn btn-outline" href="#quote" style="color:var(--rose);border-color:var(--rose)">Request a quote</a>
   </header>
 
-  <div class="hero">
-    <h1>Office, school and desking furniture</h1>
-    <p>Tell us what your space needs. We'll help you choose the right furniture and send you a quote.</p>
-    <a class="btn btn-whatsapp" href="https://wa.me/27780195761" target="_blank" rel="noopener">Chat on WhatsApp</a>
-    <a class="btn btn-email" href="mailto:ltolmay1234@gmail.com">Email us</a>
-  </div>
-
-  <section>
-    <h2>What we supply</h2>
-    <ul class="cats">
-      <li><strong>Executive &amp; managerial chairs</strong>Office chairs for every level of the workplace</li>
-      <li><strong>Economy &amp; stackable chairs</strong>Practical seating for offices, halls and training rooms</li>
-      <li><strong>Operator &amp; draughtsman chairs</strong>Task and drafting seating with height adjustment</li>
-      <li><strong>Typist chairs</strong>Everyday seating for admin and reception work</li>
-      <li><strong>Industrial &amp; dental stools</strong>Hard-wearing stools for workshops and clinics</li>
-      <li><strong>Bar stools &amp; tub chairs</strong>Seating for cafés, lounges and breakout areas</li>
-      <li><strong>Soft seating &amp; reception</strong>Waiting-area and reception furniture</li>
-      <li><strong>Training &amp; folding tables</strong>Round, rectangular and mobile tables</li>
-      <li><strong>School desks &amp; chairs</strong>Desks, teacher desks and school chairs</li>
-    </ul>
+  <section id="range">
+    <h2>Our range</h2>
+    <p class="lead">Browse a selection of what we supply. Pick anything you like and we'll confirm the exact model, colour and quantity with you.</p>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Photos show representative products from our suppliers. Colours and models are confirmed when you request a quote.</p>
   </section>
 
-  <section class="quote">
-    <h2>Get a quote</h2>
-    <p>Pricing depends on your products, quantities and delivery distance. Send us your details and we'll come back to you with a quote.</p>
-    <a class="btn btn-whatsapp" href="https://wa.me/27780195761" target="_blank" rel="noopener">WhatsApp 078 019 5761</a>
-    <a class="btn btn-email" href="mailto:ltolmay1234@gmail.com">ltolmay1234@gmail.com</a>
+  <section id="why" class="alt">
+    <div class="inner">
+      <h2>Why buy from Furnex</h2>
+      <p class="lead">One contact for the whole job, from a single office chair to a full school refit.</p>
+      <ul class="reasons">
+        <li><strong>One supplier, many categories</strong>Executive, managerial and operator chairs, school desks, training tables, soft seating and more, all from one enquiry.</li>
+        <li><strong>Options for every budget</strong>From economy and stackable seating to executive chairs for boardrooms and management offices.</li>
+        <li><strong>Built for offices and schools</strong>Furniture for classrooms, staff rooms, offices, reception areas and training rooms.</li>
+        <li><strong>Quotes that fit your site</strong>We quote based on your products, quantities and delivery distance, with no hidden extras.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>How ordering works</h2>
+    <p class="lead">Simple and clear, so you always know where your order is.</p>
+    <ol class="steps">
+      <li><strong>Tell us what you need</strong>Send a quote request with products, quantities and your delivery area.</li>
+      <li><strong>Get your quote</strong>We come back to you with pricing, including delivery based on distance.</li>
+      <li><strong>Confirm your order</strong>Confirm by email or WhatsApp and we place the order with our supplier.</li>
+      <li><strong>Delivery</strong>We confirm the lead time once the order is placed, and arrange delivery or collection.</li>
+    </ol>
+  </section>
+
+  <section id="quote" class="alt">
+    <div class="inner">
+      <h2>Request a quote</h2>
+      <p class="lead">Fill in the form and we'll get back to you. Pricing depends on your products, quantities and delivery distance.</p>
+      <form class="form-card" id="quote-form">
+        <div class="form-grid">
+          <div><label for="f-name">Your name *</label><input id="f-name" name="name" required></div>
+          <div><label for="f-org">Company or school</label><input id="f-org" name="org"></div>
+          <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required></div>
+          <div><label for="f-phone">Phone / WhatsApp *</label><input id="f-phone" name="phone" type="tel" required></div>
+          <div class="full">
+            <label for="f-type">What do you need?</label>
+            <select id="f-type" name="type">
+              <option value="">Choose a category</option>
+              <option>Executive chairs</option>
+              <option>Managerial chairs</option>
+              <option>Economy &amp; stackable chairs</option>
+              <option>Operator &amp; draughtsman chairs</option>
+              <option>Typist, dental &amp; industrial</option>
+              <option>Bar stools &amp; tub chairs</option>
+              <option>Soft seating &amp; reception</option>
+              <option>Training &amp; folding tables</option>
+              <option>School desks &amp; chairs</option>
+              <option>Desking &amp; office tables</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="full"><label for="f-products">Products and models (optional)</label><input id="f-products" name="products" placeholder="e.g. 20 x Zhavia chairs, 5 x School Desk"></div>
+          <div><label for="f-qty">Quantity</label><input id="f-qty" name="qty" placeholder="e.g. 30"></div>
+          <div><label for="f-area">Delivery area</label><input id="f-area" name="area" placeholder="Suburb or town"></div>
+          <div class="full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" placeholder="Room size, timelines, colours you like, or a site visit request"></textarea></div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-whatsapp" type="submit" id="send-wa">Send via WhatsApp</button>
+          <a class="btn btn-dark" id="send-mail" href="#">Send by email</a>
+          <span class="hint">Your details go straight to our team. We don't store them on this website.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Prefer to chat? Message us any time.</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/27780195761" target="_blank" rel="noopener">078 019 5761</a></p>
+    <p><strong>Email:</strong> <a href="mailto:ltolmay1234@gmail.com">ltolmay1234@gmail.com</a></p>
+    <p><strong>Based in:</strong> Roodepoort, South Africa</p>
   </section>
 
   <footer>
-    <p><strong>Furnex</strong> · Make space. Make moves.</p>
-    <p>Roodepoort, South Africa · Delivery fees depend on distance · Warranty as provided by the supplier</p>
+    <p><strong>Furnex</strong> · Office &amp; School Furniture · Make space. Make moves.</p>
+    <p>Delivery fees depend on distance. Warranty is as provided by the supplier. Photos are representative.</p>
   </footer>
+
+  <script>
+    const PRODUCTS = [{"id": 1, "file": "assets/products/01.jpg", "category": "Executive chairs", "name": "Zhavia"}, {"id": 2, "file": "assets/products/02.jpg", "category": "Executive chairs", "name": "Winston"}, {"id": 3, "file": "assets/products/03.jpg", "category": "Executive chairs", "name": "Exodus"}, {"id": 4, "file": "assets/products/04.jpg", "category": "Executive chairs", "name": "Que Netted"}, {"id": 5, "file": "assets/products/05.jpg", "category": "Executive chairs", "name": "Genesis"}, {"id": 6, "file": "assets/products/06.jpg", "category": "Executive chairs", "name": "Lijlah Slimline"}, {"id": 7, "file": "assets/products/07.jpg", "category": "Executive chairs", "name": "Zelda"}, {"id": 8, "file": "assets/products/08.jpg", "category": "Executive chairs", "name": "Jasmin"}, {"id": 9, "file": "assets/products/09.jpg", "category": "Managerial chairs", "name": "Tracey Lee"}, {"id": 10, "file": "assets/products/10.jpg", "category": "Managerial chairs", "name": "Flair"}, {"id": 11, "file": "assets/products/11.jpg", "category": "Managerial chairs", "name": "Bartolomeu Dias"}, {"id": 12, "file": "assets/products/12.jpg", "category": "Managerial chairs", "name": "Columbus"}, {"id": 13, "file": "assets/products/13.jpg", "category": "Managerial chairs", "name": "Bee-Line"}, {"id": 14, "file": "assets/products/14.jpg", "category": "Managerial chairs", "name": "Diva"}, {"id": 15, "file": "assets/products/15.jpg", "category": "Managerial chairs", "name": "Fiona"}, {"id": 16, "file": "assets/products/16.jpg", "category": "Managerial chairs", "name": "Simone"}, {"id": 17, "file": "assets/products/17.jpg", "category": "Managerial chairs", "name": "170kg Heavy Duty"}, {"id": 18, "file": "assets/products/18.jpg", "category": "Managerial chairs", "name": "Krypton"}, {"id": 19, "file": "assets/products/19.jpg", "category": "Managerial chairs", "name": "Ameira"}, {"id": 20, "file": "assets/products/20.jpg", "category": "Managerial chairs", "name": "Siavita"}, {"id": 21, "file": "assets/products/21.jpg", "category": "Economy chairs", "name": null}, {"id": 22, "file": "assets/products/22.jpg", "category": "Economy chairs", "name": null}, {"id": 23, "file": "assets/products/23.jpg", "category": "Economy chairs", "name": null}, {"id": 24, "file": "assets/products/24.jpg", "category": "Economy chairs", "name": null}, {"id": 25, "file": "assets/products/25.jpg", "category": "Economy & stackable chairs", "name": "Neon"}, {"id": 26, "file": "assets/products/26.jpg", "category": "Economy & stackable chairs", "name": "Utility"}, {"id": 27, "file": "assets/products/27.jpg", "category": "Economy & stackable chairs", "name": "Economy"}, {"id": 28, "file": "assets/products/28.jpg", "category": "Economy & stackable chairs", "name": "New Economy"}, {"id": 29, "file": "assets/products/29.jpg", "category": "Economy & stackable chairs", "name": "Amy"}, {"id": 30, "file": "assets/products/30.jpg", "category": "Economy & stackable chairs", "name": "Willi Stacker"}, {"id": 31, "file": "assets/products/31.jpg", "category": "Operator & draughtsman chairs", "name": "S3000"}, {"id": 32, "file": "assets/products/32.jpg", "category": "Operator & draughtsman chairs", "name": "S4000"}, {"id": 33, "file": "assets/products/33.jpg", "category": "Operator & draughtsman chairs", "name": "S5000"}, {"id": 34, "file": "assets/products/34.jpg", "category": "Operator & draughtsman chairs", "name": "S6000"}, {"id": 35, "file": "assets/products/35.jpg", "category": "Typist, dental & industrial", "name": null}, {"id": 36, "file": "assets/products/36.jpg", "category": "Typist, dental & industrial", "name": null}, {"id": 37, "file": "assets/products/37.jpg", "category": "Typist, dental & industrial", "name": null}, {"id": 38, "file": "assets/products/38.jpg", "category": "Typist, dental & industrial", "name": null}, {"id": 39, "file": "assets/products/39.jpg", "category": "Bar stools & tub chairs", "name": null}, {"id": 40, "file": "assets/products/40.jpg", "category": "Bar stools & tub chairs", "name": null}, {"id": 41, "file": "assets/products/41.jpg", "category": "Bar stools & tub chairs", "name": null}, {"id": 42, "file": "assets/products/42.jpg", "category": "Bar stools & tub chairs", "name": null}, {"id": 43, "file": "assets/products/43.jpg", "category": "Soft seating & training", "name": null}, {"id": 44, "file": "assets/products/44.jpg", "category": "Soft seating & training", "name": null}, {"id": 45, "file": "assets/products/45.jpg", "category": "Soft seating & training", "name": null}, {"id": 46, "file": "assets/products/46.jpg", "category": "Soft seating & training", "name": null}, {"id": 47, "file": "assets/products/47.jpg", "category": "School furniture", "name": "Round Folding Table"}, {"id": 48, "file": "assets/products/48.jpg", "category": "School furniture", "name": "Rectangular Folding Table"}, {"id": 49, "file": "assets/products/49.jpg", "category": "School furniture", "name": "Mobile Folding Table"}, {"id": 50, "file": "assets/products/50.jpg", "category": "School furniture", "name": "Teachers Desk"}];
+
+    // Build category filters
+    const cats = ['All'].concat([...new Set(PRODUCTS.map(p => p.category))]);
+    const filters = document.getElementById('filters');
+    let active = 'All';
+    function renderFilters() {
+      filters.innerHTML = '';
+      cats.forEach(c => {
+        const b = document.createElement('button');
+        b.className = 'filter' + (c === active ? ' active' : '');
+        b.textContent = c;
+        b.onclick = () => { active = c; renderFilters(); renderGrid(); };
+        filters.appendChild(b);
+      });
+    }
+
+    // Build product grid
+    const grid = document.getElementById('grid');
+    function renderGrid() {
+      grid.innerHTML = '';
+      PRODUCTS.filter(p => active === 'All' || p.category === active).forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const title = p.name ? p.name : p.category;
+        card.innerHTML =
+          '<div class="img"><img loading="lazy" src="' + p.file + '" alt="' + title + '"></div>' +
+          '<div class="body">' +
+            '<span class="cat">' + p.category + '</span>' +
+            '<span class="name">' + title + '</span>' +
+            '<a class="btn btn-dark btn-small" href="#quote" data-product="' + title.replace(/"/g,'') + '" data-category="' + p.category + '">Request a quote</a>' +
+          '</div>';
+        grid.appendChild(card);
+      });
+      grid.querySelectorAll('[data-product]').forEach(a => {
+        a.addEventListener('click', () => {
+          document.getElementById('f-products').value = a.dataset.product;
+          document.getElementById('f-type').value = mapCategory(a.dataset.category);
+        });
+      });
+    }
+
+    function mapCategory(c) {
+      const opts = Array.from(document.getElementById('f-type').options).map(o => o.value);
+      const match = opts.find(o => o && c.split(' ')[0] && o.toLowerCase().includes(c.split(' ')[0].toLowerCase()));
+      return match || '';
+    }
+
+    // Quote form: builds a WhatsApp message or an email
+    const WHATSAPP = '27780195761';
+    const EMAIL = 'ltolmay1234@gmail.com';
+    function buildMessage(f) {
+      const v = k => (f[k] ? f[k].value.trim() : '');
+      const lines = [
+        'Quote request from the Furnex website',
+        '',
+        'Name: ' + v('name'),
+        'Company / school: ' + (v('org') || '-'),
+        'Email: ' + v('email'),
+        'Phone: ' + v('phone'),
+        'Category: ' + (v('type') || '-'),
+        'Products: ' + (v('products') || '-'),
+        'Quantity: ' + (v('qty') || '-'),
+        'Delivery area: ' + (v('area') || '-'),
+        'Notes: ' + (v('message') || '-')
+      ];
+      return lines.join('\n');
+    }
+    const form = document.getElementById('quote-form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const msg = buildMessage(form.elements);
+      window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+    document.getElementById('send-mail').addEventListener('click', e => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const msg = buildMessage(form.elements);
+      const subject = 'Quote request from the Furnex website';
+      window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(msg);
+    });
+
+    renderFilters();
+    renderGrid();
+  </script>
 </body>
 </html>
